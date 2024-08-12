@@ -17,8 +17,8 @@ const Hero = () => {
             AT THE TOP
           </h1>
           <p>
-            Find your tribe, shred the pavement and build lasting friendships. <br />
-            Express yourself. Skateboarding is more than a sport, it's an art form. Discover your style.
+            
+            Express yourself. Skateboarding is more than a sport it's an art form. Discover your style.
           </p>
         </div>
       </div>

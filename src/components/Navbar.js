@@ -12,26 +12,36 @@ const Navbar = () => {
   return (
     <header >
     <div className="header-inner container">
-
-      <a href="/">
-        <img src={logo} alt="plus2.34_logo" />
-      </a>
-
-      <nav ref={navRef}>
-        <a href="/">ABOUT</a>
-        <a href="/">SHOP</a>
-        <a href="/">GALLERY</a>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes />
-        </button>
-      </nav>
-      <div >
-        <button id="support"  className="btn btn-light">support us</button>
-
-        <button className="nav-btn" onClick={showNavbar}>
-          <FaBars />
-        </button>
+      <div className="logo-nav-btn">
+        <div> 
+          <a href="/">
+            <img src={logo} alt="plus2.34_logo" />
+          </a>
+        </div>
+       
+        <div>
+          <nav ref={navRef}>
+            <a href="/">ABOUT</a>
+            <a href="/">SHOP</a>
+            <a href="/">GALLERY</a>
+            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+              <FaTimes />
+            </button>
+          </nav>
+        </div>
+       
+        <div>
+          <button className="nav-btn" onClick={showNavbar}>
+            <FaBars />
+          </button>
+          
+          <button id="support"  className="btn btn-light">
+            support us
+            </button>
+        </div>
       </div>
+
+
     </div>
     </header>
   );
