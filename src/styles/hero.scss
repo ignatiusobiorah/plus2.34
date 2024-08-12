@@ -1,6 +1,60 @@
 .hero {
   width: 100vw;
-  height: 100vh;
-  background-image: url(../img/hero-background.png);
+  height: 85vh;
+  background-image: url(../img/hero-img.gif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  .overlay{
+    background: #000000CC;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    .hero-inner{
+      color: #fff;
+      // border: 2px solid red;
+      text-align: center;
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: fit-content;
+
+      .location-overlay {
+        position: relative;
+        width: fit-content;
+      
+
+        .text {
+          position: relative;
+          z-index: 1;
+          font-size: 20px;
+        }
+
+        .image {
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 220px;
+          height: 30px;
+          z-index: 2;
+          mix-blend-mode: screen;
+        }
+      }
+
+      h1 {
+        font-weight: 900;
+      }
+
+    }
+  }
 }

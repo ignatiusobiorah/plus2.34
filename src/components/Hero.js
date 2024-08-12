@@ -1,8 +1,29 @@
 import React from "react";
-import "../styles/hero.scss";
+import circle from "../img/circle2.png";
+
 
 const Hero = () => {
-  return <div className="hero">Hero</div>;
+  return (
+    <div className="hero">
+      <div className="overlay">
+        <div className="hero-inner">
+          <div className="location-overlay">
+            <p className="text">Port Harcourt, Nigeria</p>
+            <img src={circle} alt="little skateboard" className="image" />
+          </div>
+
+          <h1>
+            SKATEBOARDING COMMUNITY <br />
+            AT THE TOP
+          </h1>
+          <p>
+            Find your tribe, shred the pavement and build lasting friendships. <br />
+            Express yourself. Skateboarding is more than a sport, it's an art form. Discover your style.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Hero;

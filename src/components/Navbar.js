@@ -1,8 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../img/Layer 2.png";
-import "../styles/navbar.scss";
+import logo from "../img/Layer 1.png";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -11,7 +10,9 @@ const Navbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
   return (
-    <header>
+    <header >
+    <div className="header-inner container">
+
       <a href="/">
         <img src={logo} alt="plus2.34_logo" />
       </a>
@@ -24,13 +25,14 @@ const Navbar = () => {
           <FaTimes />
         </button>
       </nav>
-      <div>
-        <button id="support">support us</button>
+      <div >
+        <button id="support"  className="btn btn-light">support us</button>
 
         <button className="nav-btn" onClick={showNavbar}>
           <FaBars />
         </button>
       </div>
+    </div>
     </header>
   );
 };
