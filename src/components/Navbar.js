@@ -11,7 +11,8 @@ const Navbar = () => {
   };
   return (
     <header >
-    <div className="header-inner container">
+      <div className="overlay">
+      <div className="header-inner container">
       <div className="logo-nav-btn">
         <div> 
           <a href="/">
@@ -43,6 +44,8 @@ const Navbar = () => {
 
 
     </div>
+      </div>
+
     </header>
   );
 };

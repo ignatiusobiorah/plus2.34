@@ -1,10 +1,6 @@
 .hero {
   width: 100vw;
-  height: 90vh;
-  background-image: url(../img/hero-img.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 85vh;
   position: relative;
 
   .overlay{
@@ -18,7 +14,6 @@
 
     .hero-inner{
       color: #fff;
-      // border: 2px solid red;
       text-align: center;
       margin-top: 10%;
       display: flex;
@@ -27,7 +22,7 @@
       justify-content: center;
       width: 100%;
       height: fit-content;
-      padding-top: 5rem;
+      padding-top: 4rem;
 
       .location-overlay {
         position: relative;
