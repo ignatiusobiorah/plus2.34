@@ -1,0 +1,16 @@
+.knowUs {
+    width: 100vw;
+    position: relative;
+    padding: 2rem 1rem;
+    background-color: #00000000;
+    
+
+    .knowUs-image {
+        position: relative;
+        padding-bottom: 2rem;
+        img {
+            height: 34rem;
+            width: 22rem;
+        }
+    }
+}

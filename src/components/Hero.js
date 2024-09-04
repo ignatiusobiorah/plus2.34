@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="hero-inner">
           <div className="location-overlay">
             <p className="text">Port Harcourt, Nigeria</p>
-            <img src={circle} alt="little skateboard" className="image" />
+            <img src={circle} alt="circle ove location" className="image" />
           </div>
 
           <h1>
