@@ -1,5 +1,5 @@
 import React from "react"
-import Horgan from "../img/boy-scale.jpeg"
+import Horgan from "../img/Horgan2.jpg"
 
 export default function KnowUs() {
   return (
