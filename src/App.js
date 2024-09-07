@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import KnowUs from "./components/KnowUs";
+import Shop from "./components/Shop";
 import MediaPlayer from "./components/MediaPlayer";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <KnowUs />
       <MediaPlayer/>
+      {/* <Shop /> */}
     </div>
   );
 }
