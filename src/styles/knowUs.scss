@@ -10,10 +10,31 @@
         img {
             height: 34rem;
             width: 22rem;
+            margin-bottom: 2rem;
         }
     }
 
     .knowUs-text {
         color: #FFFFFF;
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .knowUs {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+    }
+
+    .knowUs-text {
+        padding-top: 6rem;
+        width: 45%;
+
+        h2 {
+            font-weight: 900;
+            font-size: 3rem;
+        }
     }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import circle from "../img/circle2.png";
 
 
+
 const Hero = () => {
   return (
     <div className="hero">
