@@ -18,6 +18,20 @@ header {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        
+        .nav-shop {
+          margin-left: 15rem;
+          display: flex;
+          align-items: center;
+          .user {
+            cursor: pointer;
+            margin-right: 0.5rem;
+          }
+  
+          .cart {
+            cursor: pointer;
+          }
+        }
       }
     nav {
       a {
@@ -29,6 +43,8 @@ header {
         }
       }
     }
+    
+
   
     .nav-btn {
       cursor: pointer;
@@ -59,6 +75,8 @@ header {
       }
   
       .nav-btn {
+        margin-top: 2rem;
+        margin-left: 2rem;
         visibility: visible;
         font-size: 1.5rem;
         display: block;

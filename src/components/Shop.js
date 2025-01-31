@@ -1,6 +1,5 @@
 import React from "react"
-import { products } from "../products";
-import {Product} from "./Product"
+
 
 function Shop() {
   return (
@@ -9,7 +8,6 @@ function Shop() {
             <h2> Our shop</h2>
         </div>
         <div className="products">
-            {products.map((product) => <Product />)}
         </div>
     </div>
   )

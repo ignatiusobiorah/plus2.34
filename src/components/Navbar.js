@@ -2,6 +2,8 @@ import React from "react";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../img/Layer 1.png";
+import { CircleUserRound } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -30,7 +32,12 @@ const Navbar = () => {
             </button>
           </nav>
         </div>
-       
+          <div className="nav-shop">
+            <CircleUserRound className="user"/>
+            <ShoppingBag className="cart"/>
+          </div>
+
+
         <div>
           <button className="nav-btn" onClick={showNavbar}>
             <FaBars />

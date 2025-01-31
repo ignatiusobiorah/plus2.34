@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <KnowUs />
       <MediaPlayer/>
-      {/* <Shop /> */}
+      <Shop />
     </div>
   );
 }
