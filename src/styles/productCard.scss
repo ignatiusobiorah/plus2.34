@@ -1,0 +1,33 @@
+.product-card-container {
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem;
+    .product-card {
+        border: 2px solid red;
+        width: 200px;
+        height: 400px;
+        padding: 12px;
+        background-color: #1e1e1e;
+        color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+    
+        &:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+    
+        .card {
+            img {
+                width: auto;
+                height: 200px;
+                // display: block;
+                border-radius: 12px 12px 0 0;
+            }
+        }
+    }
+}
