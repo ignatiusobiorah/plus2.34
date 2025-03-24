@@ -1,5 +1,4 @@
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 import KnowUs from "./components/KnowUs";
 import Shop from "./components/Shop";
 import MediaPlayer from "./components/MediaPlayer";
@@ -7,9 +6,8 @@ import MediaPlayer from "./components/MediaPlayer";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      {/* <Hero />
-      <KnowUs />
+      <Hero />
+      {/* <KnowUs />
       <MediaPlayer/>
       <Shop /> */}
     </div>
