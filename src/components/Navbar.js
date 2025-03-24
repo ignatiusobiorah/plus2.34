@@ -7,7 +7,6 @@ import { ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
   const navRef = useRef();
-  const headerRef = useRef();
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -15,42 +14,9 @@ const Navbar = () => {
     document.body.classList.toggle("menu-open");
   };
 
-  //Close mobile menu when user clicks outside of it
-  useEffect(()=> {
-    const closeMenu = (event) => {
-      if (
-        navRef.current && 
-        navRef.current.classList.contains("responsive_nav") &&
-        !navRef.current.contains(event.target) &&
-        !event.target.classList.contains("nav-btn")
-      ){
-        navRef.current.classList.remove("responsive_nav");
-        document.body.classList.remove("menu-open");
-      }
-    };
-
-    document.addEventListener("mousedown", closeMenu);
-    return () => document.removeEventListener("mousedown", closeMenu);
-  }, []);
-
-  //Handle window resize 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 1024 && navRef.current.classList.contains("responsive_nav")) {
-        navRef.current.classList.remove("responsive_nav");
-        document.body.classList.remove("menu-open");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <header ref={headerRef}>
-      <div className="overlay">
-      <div className="header-inner container">
-      <div className="logo-nav-btn">
+    <header>
+      <div className="header-content">
         <div> 
           <a href="/">
             <img src={logo} alt="plus2.34_logo" />
@@ -83,9 +49,7 @@ const Navbar = () => {
             </button>
         </div>
       </div>
-
-    </div>
-    </div>
+    
 
     </header>
   );
