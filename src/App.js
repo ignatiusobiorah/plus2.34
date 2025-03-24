@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <Hero />
-      {/* <KnowUs />
-      <MediaPlayer/>
+      <KnowUs />
+      {/* <MediaPlayer/>
       <Shop /> */}
     </div>
   );
