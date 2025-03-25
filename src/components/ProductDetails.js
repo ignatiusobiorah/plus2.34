@@ -1,14 +1,14 @@
 const ProductDetails = [
     {
       id: 1,
-      title: "My First Book of Pencil Control",
+      title: "My First Book",
       price: 89,
       img: "https://m.media-amazon.com/images/I/810OOg88LoL._AC_UY327_FMwebp_QL65_.jpg",
       amount: 1,
     },
     {
       id: 2,
-      title: "108 Panchatantra Stories",
+      title: "Panchatantra Stories",
       author: "by Maple Press  | 1 September 2020",
       price: 98,
       img: "https://m.media-amazon.com/images/I/71rmxx8P2qL._AC_UY327_FMwebp_QL65_.jpg",
@@ -16,7 +16,7 @@ const ProductDetails = [
     },
     {
       id: 3,
-      title: "Amazing Questions & Answers Science",
+      title: "Amazing Questions",
       author: "by Om Books Editorial Team  | 25 November 2018",
       price: 143,
       img: "https://m.media-amazon.com/images/I/81Gbz0XnW7L._AC_UY327_FMwebp_QL65_.jpg",
@@ -24,7 +24,7 @@ const ProductDetails = [
     },
     {
       id: 4,
-      title: "My First Book of Pencil Control",
+      title: "Book of Pencil",
       author: "by Wonder House Books | 25 April 2018",
       price: 57,
       img: "https://m.media-amazon.com/images/I/81Gbz0XnW7L._AC_UY327_FMwebp_QL65_.jpg",
@@ -32,7 +32,7 @@ const ProductDetails = [
     },
     {
       id: 5,
-      title: "My First 1000 Words",
+      title: "My First 1000",
       author: "by Wonder House Books  | 1 January 2018",
       price: 149,
       img: "https://m.media-amazon.com/images/I/71O-FI7QApL._AC_UY327_FMwebp_QL65_.jpg",
@@ -40,7 +40,7 @@ const ProductDetails = [
     },
     {
       id: 6,
-      title: "101 Panchatantra Stories for Children",
+      title: "Stories for Children",
       author: "by Om Books Editorial Team | 30 September 2020",
       price: 135,
       img: "https://m.media-amazon.com/images/I/9173YBkMIsL._AC_UY327_FMwebp_QL65_.jpg",
@@ -48,7 +48,7 @@ const ProductDetails = [
     },
     {
       id: 7,
-      title: "Pre-School Activities Pack ",
+      title: "Pre-School",
       author: "by Om Books Editorial Team  | 1 January 2021",
       price: 693,
       img: "https://m.media-amazon.com/images/I/913sv4sex3L._AC_UY327_FMwebp_QL65_.jpg",
@@ -56,7 +56,7 @@ const ProductDetails = [
     },
     {
       id: 8,
-      title: "Early Learning Library Pack 1",
+      title: "Early Learning",
       author: "by Wonder House Books  | 6 December 2020",
       price: 289,
       img: "https://m.media-amazon.com/images/I/71xMttNhr7L._AC_UY327_FMwebp_QL65_.jpg",
@@ -64,7 +64,7 @@ const ProductDetails = [
     },
     {
       id: 9,
-      title: "Blossom Moral Story Book for Kids ",
+      title: "Story Book for Kids",
       author: "by Content Team at Target Publications",
       price: 80,
       img: "https://m.media-amazon.com/images/I/7122h3jWvEL._AC_UY327_FMwebp_QL65_.jpg",
@@ -72,7 +72,7 @@ const ProductDetails = [
     },
     {
       id: 10,
-      title: "Brain Activity Book for Kids",
+      title: "Brain for Kids",
       author: "by Maple Press | 1 September 2021",
       price: 86,
       img: "https://m.media-amazon.com/images/I/7175YpTSa7L._AC_UY327_FMwebp_QL65_.jpg",
@@ -88,7 +88,7 @@ const ProductDetails = [
     },
     {
       id: 12,
-      title: "Grandma's Bag of Stories",
+      title: "Bag of Stories",
       author: "by Sudha Murty | 1 January 2015",
       price: 157,
       img: "https://m.media-amazon.com/images/I/81jv44QdNwL._AC_UY327_FMwebp_QL65_.jpg",

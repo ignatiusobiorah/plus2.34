@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductCard = ({item}) => {
+const ProductCard = ({item, handleClick}) => {
     const {title, author, price, img} = item;
 
   return (
@@ -11,6 +11,9 @@ const ProductCard = ({item}) => {
           <div className='details'>
               <p>{title}</p>
               <p># {price}</p>
+          </div>
+          <div className='cart-btn'>
+            <button onClick={()=>handleClick(item)} className='btn btn-light'>Add to cart</button>
           </div>
         </div>
   )
