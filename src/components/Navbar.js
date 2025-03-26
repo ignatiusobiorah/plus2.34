@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../img/Layer 1.png";
 import { CircleUserRound } from "lucide-react";
 import { ShoppingBag } from "lucide-react";
-import Cart from "./Cart";
+import Cart from "../pages/Cart";
 
 const Navbar = ({size}) => {
   const navRef = useRef();
@@ -35,9 +35,11 @@ const Navbar = ({size}) => {
         
 
         <div className="nav-shop">
-          <CircleUserRound className="user"/>
-          <ShoppingBag onClick={Cart} className="cart"/>
-          <span>{size}</span>
+          <a href="/"><CircleUserRound className="user"/></a>
+          <a href="/">
+            <ShoppingBag onClick={Cart} className="cart"/>
+            <span>{size}</span>
+          </a>
         </div>
 
 
