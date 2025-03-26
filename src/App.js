@@ -6,6 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [cart, setCart] = useState([]); //cart state to store selected items
+ 
   return (
     <div className="App">
       <Hero cart={cart} />

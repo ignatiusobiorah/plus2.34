@@ -1,10 +1,11 @@
 import React from 'react'
 
-const ProductCard = ({item, handleClick}) => {
-    const {title, author, price, img} = item;
+const ProductCard = ({item, handleClick, isDisabled}) => {
+    const {title, price, img} = item;
+   
 
   return (
-          <div className='product-card'>
+        <div className='product-card'>
           <div className='card'>
               <img src={img} alt='product-image'/>
           </div>
@@ -13,7 +14,9 @@ const ProductCard = ({item, handleClick}) => {
               <p># {price}</p>
           </div>
           <div className='cart-btn'>
-            <button onClick={()=>handleClick(item)} className='btn btn-light'>Add to cart</button>
+            <button onClick={()=>handleClick(item)} className='btn btn-light' disabled={isDisabled}>
+              {isDisabled ? 'Added to cart' : 'Add to cart'}
+            </button>
           </div>
         </div>
   )
