@@ -3,9 +3,10 @@ import { useState } from "react";
 
 const Cart = ({cart, setCart}) => { 
   const [price, setPrice] = useState(0);
+  console.log(price)
   return (
     <div className="cart-container">
-      {
+      {/* {
         cart.map((item) => (
           <div className="cart-item" key={item.id}>
             <div className="cart-item-details">
@@ -28,7 +29,8 @@ const Cart = ({cart, setCart}) => {
       <div>
         <span>Total</span>
         <span># {price}</span>
-      </div>
+      </div> */}
+      <h1 onClick={() => setPrice(9)}>Cart Page</h1>
     </div>
   )
 }
