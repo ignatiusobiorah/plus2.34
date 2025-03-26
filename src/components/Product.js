@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export const Product = ({cart, setCart}) => {
     const [disabled, setDisabled] = useState([]); //state to hold items already added to the cart
-    const [showCart, setShowCart] = useState(true); //state to show cart
 
     const handleClick = (item) => {
         // console.log(item);

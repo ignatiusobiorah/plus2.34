@@ -6,8 +6,8 @@ const Cart = ({cart, setCart}) => {
   console.log(price)
   return (
     <div className="cart-container">
-      {/* {
-        cart.map((item) => (
+      {
+        cart?.map((item) => (
           <div className="cart-item" key={item.id}>
             <div className="cart-item-details">
               <img src={item.img} alt="product-image"/>
@@ -15,8 +15,8 @@ const Cart = ({cart, setCart}) => {
             </div>
 
             <div> 
-              <button></button>
-              <button></button>
+              <button> + </button>
+              <button> - </button>
             </div>
               
             <div className="cart-item-price">
@@ -29,8 +29,8 @@ const Cart = ({cart, setCart}) => {
       <div>
         <span>Total</span>
         <span># {price}</span>
-      </div> */}
-      <h1 onClick={() => setPrice(9)}>Cart Page</h1>
+      </div>
+      
     </div>
   )
 }
