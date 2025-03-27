@@ -2,11 +2,8 @@ import Hero from "../components/Hero";
 import KnowUs from "../components/KnowUs";
 import Shop from "../components/Shop";
 import MediaPlayer from "../components/MediaPlayer";
-import { useState } from "react";
 
-
-function Home() {
-  const [cart, setCart] = useState([]); //cart state to store selected items
+function Home({cart, setCart}) {
  
   return (
     <div className="App">
