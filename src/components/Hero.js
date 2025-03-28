@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import circle from "../img/circle2.png";
 
 const Hero = ({cart}) => {
@@ -7,7 +6,6 @@ const Hero = ({cart}) => {
   return (
     <div className="hero">
       <div className="overlay">
-        <Navbar size={cart.length}/>
         <div className="hero-inner">
           <div className="location-overlay">
             <p className="text">Port Harcourt, Nigeria</p>

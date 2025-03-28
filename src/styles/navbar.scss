@@ -221,6 +221,18 @@ header {
     }
   }
 
- 
+//styles for fixed navbar
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #000000CC;
+  transition: 0.3s ease-in-out;
+}
 
+.page-content {
+  padding-top: 4rem;
+}
 
