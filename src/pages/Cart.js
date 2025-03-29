@@ -19,25 +19,31 @@ const Cart = ({ cart, setCart }) => {
               <div className="cart-item" key={item.id}>
                 <div className="cart-item-details">
                   <img src={item.img} alt="product-image" />
-                  <p className="item-title">{item.title}</p>
+                  <div>
+                    <p className="item-title">{item.title}</p>
+                    <span># {item.price}</span>
+                  </div>
+                  
                 </div>
 
                 <div className="cart-item-quantity">
-                  <button className="btn btn-light"> + </button>
-                  <button className="btn btn-light"> - </button>
+
+                  <div>
+                    <button className="btn btn-light"> + </button>
+                    <span className="amount"> </span>
+                    <button className="btn btn-light"> - </button>
+                  </div>
+                    <button className="btn btn-light">Remove</button>
                 </div>
 
-                <div className="cart-item-price">
-                  <span># {item.price}</span>
-                  <button className="btn btn-light">remove</button>
-                </div>
               </div>
             ))}
           </div>
 
           <div className="summary">
-            <span>Total</span>
-            <span># {price}</span>
+            <button className="btn btn-light btn-lg">checkout (# {price})</button>
+            {/* <span>Total</span>
+            <span># {price}</span> */}
           </div>
         </div>
       )}
