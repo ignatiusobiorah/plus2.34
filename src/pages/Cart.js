@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {Trash2} from "lucide-react";
 
 const Cart = ({ cart, setCart }) => {
@@ -15,12 +15,24 @@ const Cart = ({ cart, setCart }) => {
     setPrice(total);
   }
 
+  useEffect (() => {
+    handlePrice();
+  })
+
   // Remove item from cart
   const removeItem = (id) => {
     const newCart = cart.filter((item) => item.id !== id);
     setCart(newCart);
     // console.log(newCart);
   };
+
+
+
+  const updateAmount = (item, operator) => {
+    console.log(item, operator);
+  }
+    
+  
 
   return (
     <div className="cart-container">
@@ -46,9 +58,9 @@ const Cart = ({ cart, setCart }) => {
                 <div className="cart-item-quantity">
 
                   <div className="quantity">
-                    <button className="btn btn-light"> + </button>
+                    <button className="btn btn-light" onClick={() => updateAmount(item, "+")}> + </button>
                     <button className="amount btn btn-outline-light"> {item.amount}</button>
-                    <button className="btn btn-light"> - </button>
+                    <button className="btn btn-light" onClick={() => updateAmount(item, "-")}> - </button>
                   </div>
                     <button onClick={() => removeItem(item.id)} className="btn btn-light"><Trash2 /> Remove</button>
                 </div>
