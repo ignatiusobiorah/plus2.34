@@ -24,6 +24,12 @@
       justify-content: center;
       padding: 1rem 0rem;
 
+      @media (min-width: 768px) {
+        width: 70%;
+        visibility: hidden;
+        opacity: 0;
+      }
+
       .btn {
         width: 90%;
         font-size: 1.5rem;
@@ -32,9 +38,9 @@
     }
 
     .cart-items-list {
-      // @media (min-width: 768px) {
-      //   width: 70%;
-      // }
+      @media (min-width: 768px) {
+        width: 70%;
+      }
 
       .cart-item {
         width: 100%;
@@ -63,9 +69,15 @@
           display: flex;
           justify-content: space-between;
           gap: 0.5rem;
-          // .amount {
-          //   width: 50px;
-          // }
+
+          .quantity {
+            display: flex;
+            gap: 0.5rem;
+
+            .amount {
+              width: 6rem;
+            }
+          }
         }
 
       }

@@ -2,8 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../img/Layer 1.png";
-import { CircleUserRound } from "lucide-react";
-import { ShoppingBag } from "lucide-react";
+import { CircleUserRound, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ size }) => {

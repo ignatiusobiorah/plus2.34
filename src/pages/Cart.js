@@ -1,10 +1,27 @@
 import React from "react";
 import Header from "../components/Header";
 import { useState } from "react";
+import {Trash2} from "lucide-react";
 
 const Cart = ({ cart, setCart }) => {
   const [price, setPrice] = useState(0);
-  console.log(price);
+
+  //Calculate the total price of the cart items
+  const handlePrice = () => {
+    let total =0;
+    cart.map((item) => (
+      total += item.price * item.amount
+    ))
+    setPrice(total);
+  }
+
+  // Remove item from cart
+  const removeItem = (id) => {
+    const newCart = cart.filter((item) => item.id !== id);
+    setCart(newCart);
+    // console.log(newCart);
+  };
+
   return (
     <div className="cart-container">
       <Header cart={cart} />
@@ -28,12 +45,12 @@ const Cart = ({ cart, setCart }) => {
 
                 <div className="cart-item-quantity">
 
-                  <div>
+                  <div className="quantity">
                     <button className="btn btn-light"> + </button>
-                    <span className="amount"> </span>
+                    <button className="amount btn btn-outline-light"> {item.amount}</button>
                     <button className="btn btn-light"> - </button>
                   </div>
-                    <button className="btn btn-light">Remove</button>
+                    <button onClick={() => removeItem(item.id)} className="btn btn-light"><Trash2 /> Remove</button>
                 </div>
 
               </div>
