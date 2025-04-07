@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
 import {Trash2} from "lucide-react";
@@ -7,17 +7,17 @@ const Cart = ({ cart, setCart }) => {
   const [price, setPrice] = useState(0);
 
   //Calculate the total price of the cart items
-  const handlePrice = () => {
-    let total =0;
-    cart.map((item) => (
-      total += item.price * item.amount
-    ))
+  const handlePrice = useCallback(() => {
+    let total = 0;
+    cart.forEach((item) => {
+      total += item.price * item.amount;
+    });
     setPrice(total);
-  }
+  }, [cart]); 
 
   useEffect (() => {
     handlePrice();
-  })
+  }, [cart, handlePrice]);
 
   // Remove item from cart
   const removeItem = (id) => {
@@ -26,10 +26,31 @@ const Cart = ({ cart, setCart }) => {
     // console.log(newCart);
   };
 
-
-
   const updateAmount = (item, operator) => {
-    console.log(item, operator);
+    // console.log(item, operator);
+    const ind = cart.findIndex((data) => data.id === item.id);
+    
+    if (ind !== -1) {
+      //create a new array to avoid direct state mutation
+      const tempArr = [...cart];
+      tempArr[ind].amount += operator;
+
+      //Ensure amount doesn't go below 1
+      if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
+      setCart(tempArr);
+
+    // let ind = -1;
+    // cart.forEach((data, index) => {
+    //   if (data.id === index.id)
+    //     ind = index;
+    // });
+    // const tempArr = cart;
+    // tempArr[ind].amount += operator;
+
+    // if (tempArr[ind].amount === 0)
+    //   tempArr[ind].amount = 1;
+    // setCart([...tempArr])
+    }
   }
     
   
@@ -58,9 +79,9 @@ const Cart = ({ cart, setCart }) => {
                 <div className="cart-item-quantity">
 
                   <div className="quantity">
-                    <button className="btn btn-light" onClick={() => updateAmount(item, "+")}> + </button>
+                    <button className="btn btn-light" onClick={() => updateAmount(item, +1)}> + </button>
                     <button className="amount btn btn-outline-light"> {item.amount}</button>
-                    <button className="btn btn-light" onClick={() => updateAmount(item, "-")}> - </button>
+                    <button className="btn btn-light" onClick={() => updateAmount(item, -1)}> - </button>
                   </div>
                     <button onClick={() => removeItem(item.id)} className="btn btn-light"><Trash2 /> Remove</button>
                 </div>

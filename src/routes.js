@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
+import Shop from "./components/Shop";
 import { useState } from "react";
 
 const AppRoute = () => {
@@ -10,6 +11,7 @@ const AppRoute = () => {
       <Routes>
         <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>} />
+        <Route path="/shop" element={<Shop cart={cart} setCart={setCart}/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </BrowserRouter>

@@ -27,7 +27,7 @@ const Navbar = ({ size }) => {
           <a href="/" onClick={showNavbar}>
             ABOUT
           </a>
-          <a href="/" onClick={showNavbar}>
+          <a href="/shop">
             SHOP
           </a>
           <a href="/" onClick={showNavbar}>
